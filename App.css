@@ -10,7 +10,7 @@ body {
     padding: 0;
 }
 
-*{
+* {
     scroll-behavior: smooth;
 }
 
@@ -22,6 +22,7 @@ body {
 }
 
 .profile {
+    margin-top: 2rem;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -40,6 +41,7 @@ body {
     font-family: "Modak", system-ui;
     font-weight: 400;
     font-size: 4em;
+    text-align: center;
     color: transparent;
     background: linear-gradient(45deg, #7b3aed 0%, #008cfa 80%, #008cfa 100%);
     background-size: 240% 100%;
@@ -72,6 +74,21 @@ body {
     color: white;
     background: linear-gradient(45deg, #ff00ff, #8000ff);
     box-shadow: 0 0 15px rgba(128, 0, 255, 0.8);
+}
+
+.circle-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(123, 58, 237, 0.5);
+    box-shadow: 0 0 10px rgba(123, 58, 237, 0.8);
 }
 
 /* Contenedor principal */
@@ -257,7 +274,7 @@ body {
     display: inline-block;
 }
 
-.tags a{
+.tags a {
     text-decoration: none;
     color: #7B3AED;
     background-color: #7c3aed3b;
@@ -270,12 +287,12 @@ body {
     transition: 0.5s;
 }
 
-.tags a:hover{
+.tags a:hover {
     background-color: #7c3aed;
     color: white;
 }
 
-#skills h2{
+#skills h2 {
     display: flex;
     justify-content: center;
     color: #7B3AED;
@@ -283,26 +300,234 @@ body {
     text-shadow: 0 0 16px #7c3aedbd;
 }
 
+/* Contenedor de habilidades */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Espacio entre cajas */
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Estilo de las cajas */
+.skill-box {
+    border: 2px solid #7B3AED;
+    border-radius: 12px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0px 0px 10px rgba(123, 58, 237, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Efecto hover */
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px rgba(123, 58, 237, 0.5);
+}
+
+/* Contenedor del título e ícono */
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+/* Tamaño del ícono */
+.skill-box i {
+    font-size: 26px;
+}
+
+/* Estilo del título */
+.skill-box h3 {
+    font-size: 20px;
+}
+
+/* Íconos personalizados por categoría */
 .fas.fa-code {
     color: #7B3AED;
 }
 
-.fas.fa-server{
+.fas.fa-server {
     color: #008CFA;
 }
 
-.fas.fa-database{
+.Skills span {
+    background-color: #008CFA;
+}
+
+.fas.fa-database {
     color: #9D29C1;
 }
 
-.fas.fa-globe{    
+.fas.fa-globe {
     color: #7B3AED;
 }
 
-.fas.fa-paint-brush{
+.fas.fa-paint-brush {
     color: #008CFA;
 }
 
-.fas.fa-cogs{
+.fas.fa-cogs {
     color: #9D29C1;
+}
+
+/* Estilo de los botones de habilidades */
+.skill-box span {
+    background-color: rgba(123, 58, 237, 0.7);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin: 5px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(123, 58, 237, 0.5);
+}
+
+.Skill-text {
+    display: flex;
+    color: #ccccccc1;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Skills-purple {
+    color: #7B3AED;
+    background-color: #7c3aed20 !important;
+}
+
+.Skills-blue {
+    color: #008CFA;
+    background-color: #008cfa20 !important;
+}
+
+.Skills-pink {
+    color: #9D29C1;
+    background-color: #9d29c120 !important;
+}
+
+/* Estilos Generales */
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contacts {
+    font-size: 32px;
+    color: #7B3AED;
+    text-shadow: 0 0 8px rgba(123, 58, 237, 0.5);
+}
+
+/* Contenedor principal */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Información de contacto */
+.contact-info {
+    text-align: center;
+    max-width: 400px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    color: white;
+}
+
+.contact-info p {
+    color: #bbb;
+    margin: 10px 0;
+}
+
+/* Íconos de contacto */
+.contact-icons {
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 24px;
+    color: #7B3AED;
+    background: rgba(123, 58, 237, 0.1);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.contact-icons a:hover {
+    background: #7B3AED;
+    color: white;
+}
+
+/* Estilos del Formulario */
+.contact-form {
+    background: #1A1A1A;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(123, 58, 237, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+.contact-form h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #7B3AED;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Boton de enviar */
+.send-btn {
+    width: 100%;
+    background: #7B3AED;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.send-btn i {
+    margin-right: 5px;
+}
+
+.send-btn:hover {
+    background: #5A1FBF;
 }
