@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .profile {
@@ -39,23 +39,29 @@ body {
 /* Estilo para el nombre */
 .name {
     font-family: "Modak", system-ui;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 4em;
     text-align: center;
     color: transparent;
-    background: linear-gradient(45deg, #7b3aed 0%, #008cfa 80%, #008cfa 100%);
-    background-size: 240% 100%;
+    background: linear-gradient(45deg, #7b3aed 20%, #008cfa 80%, #008cfa 100%);
+    background-size: 200% 150%;
     background-clip: text;
     -webkit-background-clip: text;
 }
 
 /* Estilo para el full stack */
 .role {
+    margin-top: -30px;
     font-size: 1.6em;
     color: #ccccccc7;
 }
 
 /* Estilo para los botones del perfil */
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
 .buttons a {
     text-decoration: none;
     background: black;
@@ -147,7 +153,15 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     max-width: 600px;
+    max-height: 600px;
     text-align: left;
+}
+
+.info-item {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .info-item strong {
