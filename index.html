@@ -14,6 +14,12 @@
 </head>
 
 <body>
+  <header>
+    <div class="language-switcher">
+      <button id="btn-es">Español</button>
+      <button id="btn-en">English</button>
+    </div>    
+  </header>
   <div class="container">
     <div class="profile">
       <img src="./media/Perfil.jpg" alt="Foto-Perfil-Animada" class="Foto-Perfil-Animada">
@@ -65,13 +71,13 @@
   </section>
 
   <section id="proyectos">
-    <h1 class="section-title">My Proyects</h1>
+    <h1 class="section-title">My Projects</h1>
     <div class="grid-container">
       <div class="card">
         <img src="./media/Imagen_Proyecto1.jpg" alt="Notas Vibrantes">
         <div class="card-content">
           <h2>Notas Vibrantes</h2>
-          <p>Java project that manages the 'Vibrant Notes' database,
+          <p id="Proyect1Descripcion">Java project that manages the 'Vibrant Notes' database,
             allowing to store, modify and delete records efficiently</p>
           <div class="tags">
             <span class="tag">MySQL</span>
@@ -85,7 +91,7 @@
         <img src="./media/Imagen_Proyecto2.png" alt="Rick and Morty">
         <div class="card-content">
           <h2>Rick and Morty - API</h2>
-          <p>Web application developed with HTML, CSS and JavaScript that consumes the Rick and Morty API to display
+          <p id="Proyect2Descripcion">Web application developed with HTML, CSS and JavaScript that consumes the Rick and Morty API to display
             detailed information about characters, episodes and images of the series</p>
           <div class="tags">
             <span class="tag">HTML</span>
@@ -100,7 +106,7 @@
         <img src="./media/Imagen_Proyecto3.png" alt="Movies API">
         <div class="card-content">
           <h2>Movie - API</h2>
-          <p>Web application developed with HTML, CSS and JavaScript that consumes a movie API,
+          <p id="Proyect3Descripcion">Web application developed with HTML, CSS and JavaScript that consumes a movie API,
             allowing real-time searches and the display of detailed information about each title</p>
           <div class="tags">
             <span class="tag">HTML</span>
@@ -115,7 +121,7 @@
         <img src="./media/Imagen_Proyecto4.jpg" alt="Movistar">
         <div class="card-content">
           <h2>Movistar</h2>
-          <p>Database system for MOVISTAR, designed to optimize internal processes and strengthen the relationship with
+          <p id="Proyect4Descripcion">Database system for MOVISTAR, designed to optimize internal processes and strengthen the relationship with
             customers, allowing a more efficient, organized and personalized management of information</p>
           <div class="tags">
             <span class="tag">MySQL</span>
@@ -128,7 +134,7 @@
         <img src="./media/Imagen_Proyecto5.jpg" alt="Finanzas">
         <div class="card-content">
           <h2>Currency Converter</h2>
-          <p>This program allows you to calculate the exact exchange rate in dollars quickly and accurately,
+          <p id="Proyect5Descripcion">This program allows you to calculate the exact exchange rate in dollars quickly and accurately,
             optimizing the transaction process and avoiding errors in the change calculation</p>
           <div class="tags">
             <span class="tag">Python</span>
@@ -141,7 +147,7 @@
         <img src="./media/Imagen_Proyecto6.jpg" alt="Tienda en línea">
         <div class="card-content">
           <h2>Online Store</h2>
-          <p>This program simulates an online store where users can switch between the roles of customer,
+          <p id="Proyect6Descripcion">This program simulates an online store where users can switch between the roles of customer,
             employee and owner through a menu, accessing different functions depending on the selected role</p>
           <div class="tags">
             <span class="tag">Python</span>
@@ -155,7 +161,7 @@
         <img src="./media/Imagen_Proyecto7.png" alt="APIs">
         <div class="card-content">
           <h2>APIS Menu</h2>
-          <p>This program facilitates the management and consultation of various APIs through an interactive menu,
+          <p id="Proyect7Descripcion">This program facilitates the management and consultation of various APIs through an interactive menu,
             optimizing access to information in real time</p>
           <div class="tags">
             <span class="tag">HTML</span>
@@ -170,7 +176,7 @@
         <img src="./media/Imagen_Proyecto8.jpg" alt="E-commerce">
         <div class="card-content">
           <h2>Store</h2>
-          <p>In this project I replicated as best as possible a payment gateway with 3 products that are added to the
+          <p id="Proyect8Descripcion">In this project I replicated as best as possible a payment gateway with 3 products that are added to the
             cart and the card balance is subtracted, a shopping list is also displayed</p>
           <div class="tags">
             <span class="tag">Python</span>
@@ -183,7 +189,7 @@
         <img src="./media/Imagen_Proyecto9.jpg" alt="Jardinería">
         <div class="card-content">
           <h2>Gardening</h2>
-          <p>The Gardening project is a database designed to manage information.
+          <p id="Proyect9Descripcion">The Gardening project is a database designed to manage information.
             It includes tables for offices, employees, customers, orders and products,
             allowing to efficiently organize and manage all key data</p>
           <div class="tags">
@@ -204,8 +210,7 @@
           <i class="fas fa-code"></i>
           <h3>Frontend Development</h3>
         </div>
-        <p class="Skill-text">Creating responsive and interactive user interfaces with modern frameworks and libraries
-        </p>
+        <p class="Skill-text" id="Skill1Text">Creating responsive and interactive user interfaces with modern frameworks and libraries</p>
         <span class="Skills-purple">HTML5</span>
         <span class="Skills-purple">CSS3</span>
         <span class="Skills-purple">JavaScript</span>
@@ -215,7 +220,7 @@
           <i class="fas fa-server"></i>
           <h3>Backend Development</h3>
         </div>
-        <p class="Skill-text">Building robust server-side applications and APIs to power web applications</p>
+        <p class="Skill-text" id="Skill2Text">Building robust server-side applications and APIs to power web applications</p>
         <span class="Skills-blue">Java</span>
         <span class="Skills-blue">Python</span>
       </div>
@@ -225,7 +230,7 @@
           <i class="fas fa-database"></i>
           <h3>Database & Storage</h3>
         </div>
-        <p class="Skill-text">Managing and optimizing data storage solutions for web applications</p>
+        <p class="Skill-text" id="Skill3Text">Managing and optimizing data storage solutions for web applications</p>
         <span class="Skills-pink">MySQL</span>
         <span class="Skills-pink">PostgreSQL</span>
       </div>
@@ -235,7 +240,7 @@
           <i class="fas fa-globe"></i>
           <h3>DevOps & Deployment</h3>
         </div>
-        <p class="Skill-text">Streamlining development workflows and deploying applications to production</p>
+        <p class="Skill-text" id="Skill4Text">Streamlining development workflows and deploying applications to production</p>
         <span class="Skills-purple">Git</span>
         <span class="Skills-purple">GitHub</span>
         <span class="Skills-purple">Vercel</span>
@@ -246,7 +251,7 @@
           <i class="fas fa-paint-brush"></i>
           <h3>Design & UX/UI</h3>
         </div>
-        <p class="Skill-text">Creating visually appealing and user-friendly interfaces and experiences</p>
+        <p class="Skill-text" id="Skill5Text">Creating visually appealing and user-friendly interfaces and experiences</p>
         <span class="Skills-blue">Figma</span>
         <span class="Skills-blue">Canva</span>
       </div>
@@ -256,12 +261,12 @@
           <i class="fas fa-cogs"></i>
           <h3>Soft Skills</h3>
         </div>
-        <p class="Skill-text">Additional technical and soft skills that enhance my development capabilities</p>
-        <span class="Skills-pink">Adaptability</span>
-        <span class="Skills-pink">Communication</span>
-        <span class="Skills-pink">Receptiveness to criticism</span>
-        <span class="Skills-pink">Teamwork</span>
-        <span class="Skills-pink">Time management</span>
+        <p class="Skill-text" id="Skill6Text">Additional technical and soft skills that enhance my development capabilities</p>
+        <span class="Skills-pink" id="skillPink1">Adaptability</span>
+        <span class="Skills-pink" id="skillPink2">Communication</span>
+        <span class="Skills-pink" id="skillPink3">Receptiveness to criticism</span>
+        <span class="Skills-pink" id="skillPink4">Teamwork</span>
+        <span class="Skills-pink" id="skillPink5">Time management</span>
       </div>
     </div>
   </section>
@@ -271,7 +276,7 @@
     <div class="contact-container">
       <div class="contact-info">
         <h3>Send Me a Message</h3>
-        <p>If you have any questions, an exciting idea, or just want to chat, feel free to contact me. I'm always open
+        <p id="messageText">If you have any questions, an exciting idea, or just want to chat, feel free to contact me. I'm always open
           to new opportunities,
           collaborations, and challenges that help us grow together.</p>
         <p class="text-messge">¡Let's connect and create something amazing!</p>

@@ -113,6 +113,11 @@ body {
     margin: auto;
     padding: 40px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 /* Título "About Me" */
@@ -552,4 +557,23 @@ body {
 
 .send-btn:hover {
     background: #5A1FBF;
+}
+
+/* Estilos para el boton de cambio de idioma */
+.language-switcher {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.language-switcher button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: #6c63ff;
+    color: white;
 }
