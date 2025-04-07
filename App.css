@@ -574,6 +574,12 @@ body {
     cursor: pointer;
     border-radius: 8px;
     border: none;
-    background-color: #6c63ff;
+    background-color: #7B3AED;
     color: white;
+}
+
+.language-switcher button:hover {
+    background-color: #5A1FBF;
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
